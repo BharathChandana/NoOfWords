@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace noofwords
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int count = 1, len = 0;
+            string str;
+            Console.WriteLine("Enter a string :");
+            str=Console.ReadLine();
+
+            while(len<=str.Length-1)
+            {
+                if (str[len]==' ' || str[len]=='\n' || str[len]=='\t')
+                {
+                    count++;
+                }
+                len++;
+            }
+            Console.WriteLine("no of words are "+count);
+        }
+    }
+}
