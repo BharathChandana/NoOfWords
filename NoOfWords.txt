@@ -11,9 +11,9 @@ namespace noofwords
         static void Main(string[] args)
         {
             int count = 1, len = 0;
-            string str;
+            
             Console.WriteLine("Enter a string :");
-            str=Console.ReadLine();
+            string str=Console.ReadLine();
 
             while(len<=str.Length-1)
             {
